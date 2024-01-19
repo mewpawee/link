@@ -27,21 +27,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "android-tzdata"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e999941b234f3131b00bc13c22d06e8c5ff726d1b6318ac7eb276997bbb4fef0"
-
-[[package]]
-name = "android_system_properties"
-version = "0.1.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "819e7219dbd41043ac279b19830f2efc897156490d7fd6ea916720117ee66311"
-dependencies = [
- "libc",
-]
-
-[[package]]
 name = "anyhow"
 version = "1.0.77"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -162,20 +147,6 @@ name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
-
-[[package]]
-name = "chrono"
-version = "0.4.31"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7f2c685bad3eb3d45a01354cedb7d5faa66194d1d58ba6e267a8de788f79db38"
-dependencies = [
- "android-tzdata",
- "iana-time-zone",
- "js-sys",
- "num-traits",
- "wasm-bindgen",
- "windows-targets",
-]
 
 [[package]]
 name = "ciborium"
@@ -562,52 +533,199 @@ dependencies = [
 ]
 
 [[package]]
-name = "iana-time-zone"
-version = "0.1.58"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8326b86b6cff230b97d0d312a6c40a60726df3332e721f72a1b035f451663b20"
-dependencies = [
- "android_system_properties",
- "core-foundation-sys",
- "iana-time-zone-haiku",
- "js-sys",
- "wasm-bindgen",
- "windows-core",
-]
-
-[[package]]
-name = "iana-time-zone-haiku"
-version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f31827a206f56af32e590ba56d5d2d085f558508192593743f16b2306495269f"
-dependencies = [
- "cc",
-]
-
-[[package]]
 name = "icondata"
-version = "0.1.0"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d8d9ea009dc26e5196175f903b93d3f4782dd71c47b6c505ea6ac8e1a1714ae2"
+checksum = "e38f18389f3cd0e664bd42f1dfe0aba4acda0a44036fb720eb07e8ba3a09640c"
 dependencies = [
  "icondata_ai",
+ "icondata_bi",
+ "icondata_bs",
+ "icondata_cg",
+ "icondata_ch",
  "icondata_core",
+ "icondata_fa",
+ "icondata_fi",
+ "icondata_hi",
+ "icondata_im",
+ "icondata_io",
+ "icondata_lu",
+ "icondata_oc",
+ "icondata_ri",
+ "icondata_si",
+ "icondata_tb",
+ "icondata_ti",
+ "icondata_vs",
+ "icondata_wi",
 ]
 
 [[package]]
 name = "icondata_ai"
-version = "0.0.8"
+version = "0.0.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5c8fe5fa2eed7715d5388e046d97f09d3baddd155b487454eb9cda3168c79d4b"
+checksum = "9bf3a9c196a6a169f790639ecc8fdd4396660b1d53b905230bf0b364776a56fc"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_bi"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c6ce125f0d203e66444b02982af9b15631f2385573ad7992af79d4d4babc638d"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_bs"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "67940e592b0b8df8d7adc055c8542d135ce1d7d6ad01d8fb8de9405ebfc21c2e"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_cg"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a0eba691ca17a43ffc8ebbcf200cd3ea54ad75837f210a6a6ace87a491be8314"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_ch"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2870b3c4ebf013b7e27af71d4c55f10b97ea448831e9a156cb53fec0f262dc20"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_core"
-version = "0.0.2"
+version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1640a4c1d5ddd08ab1d9854ffa7a2fa3dc52339492676b6d3031e77ca579f434"
+checksum = "6c97be924215abd5e630d84e95a47c710138a6559b4c55039f4f33aa897fa859"
+
+[[package]]
+name = "icondata_fa"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0c7fee576096efe5567a7216a6fb8154db8eae9ae108e5a4706805204208c2af"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_fi"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e1a4e81557c205a12ac051046595bb616f388537468987f7ee8960f897cdc538"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_hi"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3435d50de04c61799613995e753e613dc4f2771aa08eb94a7318289a5ea9d784"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_im"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ce4bd1d64bb67bb080f605e3e600271894b67c4aaa18965179586ef5990a2297"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_io"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "35b9d681c936a6e087940beb4766159cddc080d7f1fd5ef0ef3ab9f50a11f3f6"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_lu"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d552c45cc3ab1d1bf88cc0201004eb92418141e5454e9e0e46c4b4a4faf66248"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_oc"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8be19499912a05d5db89ccb88dbe3c459ca4100bda3dbcbddff69f2dcf71d305"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_ri"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "114a85cc95d1bfaee8dc5bf8a07dd043fc9e75499dc2ff4ac5e066193c594930"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_si"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dc30cb2dbc2ac53f23dddbcb0ad73720970b24c0ed13935df8082b74fb627860"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_tb"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8f2b8d8e2047546285805795e6d3cb6e820a52bb008e15942e11353c7ba659f2"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_ti"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8f85074d4bf10960d0f2b01ce3d9cfa2b2434a170d0738336411bb61e83227e4"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_vs"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6a82bb4a8b1523200fc7c3b588bb80858db16708067093110ee8614db63b8913"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_wi"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0d2c65b534aa9d7ccb107d892200e8fef2d1849acad160af067e9e20ced3619b"
+dependencies = [
+ "icondata_core",
+]
 
 [[package]]
 name = "idna"
@@ -649,18 +767,9 @@ checksum = "8f518f335dce6725a761382244631d86cf0ccb2863413590b31338feb467f9c3"
 
 [[package]]
 name = "itertools"
-version = "0.10.5"
+version = "0.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b0fd2260e829bddf4cb6ea802289de2f86d6a7a690192fbe91b3f46e0f2c8473"
-dependencies = [
- "either",
-]
-
-[[package]]
-name = "itertools"
-version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b1c173a5686ce8bfa551b3563d0c2170bf24ca44da99c7ca4bfdab5418c3fe57"
+checksum = "25db6b064527c5d482d0423354fcd07a89a2dfe07b67892e62411946db7f07b0"
 dependencies = [
  "either",
 ]
@@ -688,9 +797,9 @@ checksum = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
 
 [[package]]
 name = "leptos"
-version = "0.5.4"
+version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9d02b78d6e38acf8199426058a0d8c4030835d84a4ee16147df25be7fed707e0"
+checksum = "451cd0360beeaeadce642498aae975c5104ec7d241431db9360955f03c3e67d6"
 dependencies = [
  "cfg-if",
  "leptos_config",
@@ -708,9 +817,9 @@ dependencies = [
 
 [[package]]
 name = "leptos_config"
-version = "0.5.4"
+version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "afcaa5db5b22b794b624e14ffe2aefae215b2d21c60a230ae2d06fe21ae5da64"
+checksum = "2f1d21370a0747a2a8a66ac42ba871a7e5c9ac556a757f283d793520f7feec50"
 dependencies = [
  "config",
  "regex",
@@ -721,9 +830,9 @@ dependencies = [
 
 [[package]]
 name = "leptos_dom"
-version = "0.5.4"
+version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "af459b63567e8e9c921ecbe7863732dc8dcb7874eaad6826b7d3778a53ec0ea6"
+checksum = "5b0cc17bb9a07e9ede726787f5f55275b04615ad8e4f70ad30cdc7941f21433d"
 dependencies = [
  "async-recursion",
  "cfg-if",
@@ -732,7 +841,7 @@ dependencies = [
  "getrandom",
  "html-escape",
  "indexmap",
- "itertools 0.10.5",
+ "itertools",
  "js-sys",
  "leptos_reactive",
  "once_cell",
@@ -751,9 +860,9 @@ dependencies = [
 
 [[package]]
 name = "leptos_hot_reload"
-version = "0.5.4"
+version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4ea60376eb80a24b3ab082612d62211e3ea0fc4dee132f7ff34d5fa5a5108cd2"
+checksum = "99b1fcbc5f08aafa96f9786e5738d9cd17d14737ce601a2a74a5a8409ede6eb7"
 dependencies = [
  "anyhow",
  "camino",
@@ -768,16 +877,30 @@ dependencies = [
 ]
 
 [[package]]
-name = "leptos_macro"
-version = "0.5.4"
+name = "leptos_icons"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a7e96f4c450f4b5e2ccb135c2b1328890f911ca4ee89da9ed6d582df929e6cb5"
+checksum = "6a0477a66b90ed94d3b3e9472247189359426c1b6313f8589d3f2edf3fdf676b"
+dependencies = [
+ "encoding_rs",
+ "icondata_core",
+ "lazy_static",
+ "leptos",
+ "log",
+ "paste",
+]
+
+[[package]]
+name = "leptos_macro"
+version = "0.5.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "326bc53cec12bf935c7fd7d149a92db970d1373c4a157c6c354a501d13ee93bc"
 dependencies = [
  "attribute-derive",
  "cfg-if",
  "convert_case",
  "html-escape",
- "itertools 0.11.0",
+ "itertools",
  "leptos_hot_reload",
  "prettyplease",
  "proc-macro-error",
@@ -792,9 +915,9 @@ dependencies = [
 
 [[package]]
 name = "leptos_reactive"
-version = "0.5.4"
+version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "22207568e096ac153ba8da68635e3136c1ec614ea9012736fa861c05bfb2eeff"
+checksum = "aa49353fcd5f7716c15c4750893a7595969a13fcb0e5328f512930e7ca148e9b"
 dependencies = [
  "base64",
  "cfg-if",
@@ -818,13 +941,13 @@ dependencies = [
 
 [[package]]
 name = "leptos_router"
-version = "0.5.4"
+version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c1a2ff8b8e8ae8b17efd8be2a407f7f83ed57c5243f70f2d03e6635f9ff61848"
+checksum = "dde8af31661ea3144fc85e9d454f50ff2082d5550ddeee97522487d6fa218d9f"
 dependencies = [
  "cfg-if",
  "gloo-net",
- "itertools 0.11.0",
+ "itertools",
  "js-sys",
  "lazy_static",
  "leptos",
@@ -843,9 +966,9 @@ dependencies = [
 
 [[package]]
 name = "leptos_server"
-version = "0.5.4"
+version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "272d018a5adf33d10ee57e6f0f83dccc305c68613cd207e8a653aeebd4cd5b4f"
+checksum = "b493d6b95232a1487128ed6c90d69c270d615e83914c8e99eb7c25993a27e507"
 dependencies = [
  "inventory",
  "lazy_static",
@@ -879,8 +1002,8 @@ version = "0.1.0"
 dependencies = [
  "icondata",
  "leptos",
+ "leptos_icons",
  "leptos_router",
- "thaw",
 ]
 
 [[package]]
@@ -968,15 +1091,6 @@ checksum = "d273983c5a657a70a3e8f2a01329822f3b8c8172b73826411a55751e404a0a4a"
 dependencies = [
  "memchr",
  "minimal-lexical",
-]
-
-[[package]]
-name = "num-traits"
-version = "0.2.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "39e3200413f237f41ab11ad6d161bc7239c84dcb631773ccd7de3dfe4b5c267c"
-dependencies = [
- "autocfg",
 ]
 
 [[package]]
@@ -1373,9 +1487,9 @@ dependencies = [
 
 [[package]]
 name = "server_fn"
-version = "0.5.4"
+version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cfed18dfcc8d9004579c40482c3419c07f60ffb9c5b250542edca99f508b0ce9"
+checksum = "586930ff8011b83f751f1de8982c898458690232680bc73143587a962a5e9aec"
 dependencies = [
  "ciborium",
  "const_format",
@@ -1397,9 +1511,9 @@ dependencies = [
 
 [[package]]
 name = "server_fn_macro"
-version = "0.5.4"
+version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0b70ae8e22546ba85500391b36c08e3fba64871be8a26557a3663a8e08acb56f"
+checksum = "f1c8e4d65b66f7cc426bd6f71c952bf51c0d37db43ed458f5e19439211cb6a2f"
 dependencies = [
  "const_format",
  "proc-macro-error",
@@ -1412,9 +1526,9 @@ dependencies = [
 
 [[package]]
 name = "server_fn_macro_default"
-version = "0.5.4"
+version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7256ba61dfadb220598db418376e7bc2a34b96df36c4dc48f24ffe161810fc0b"
+checksum = "966c92bb4ced4fc0b3f0d89ad77ca8e6613fa99c5fdced7ae2d0ced8e2792523"
 dependencies = [
  "server_fn_macro",
  "syn",
@@ -1497,22 +1611,6 @@ checksum = "a75fb188eb626b924683e3b95e3a48e63551fcfb51949de2f06a9d91dbee93c9"
 dependencies = [
  "core-foundation-sys",
  "libc",
-]
-
-[[package]]
-name = "thaw"
-version = "0.1.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2c88227b75aa9347aeada1f08fddaa3d8173c539745c31486de1b2a02a087b36"
-dependencies = [
- "cfg-if",
- "chrono",
- "icondata",
- "icondata_core",
- "leptos",
- "uuid",
- "wasm-bindgen",
- "web-sys",
 ]
 
 [[package]]
@@ -1847,15 +1945,6 @@ name = "winapi-x86_64-pc-windows-gnu"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
-
-[[package]]
-name = "windows-core"
-version = "0.51.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f1f8cf84f35d2db49a46868f947758c7a1138116f7fac3bc844f43ade1292e64"
-dependencies = [
- "windows-targets",
-]
 
 [[package]]
 name = "windows-sys"

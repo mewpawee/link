@@ -15,7 +15,7 @@ pub struct LinkInfo {
 #[component]
 pub fn App() -> impl IntoView {
     // variables
-    let username = "mewpawee";
+    let username = "@mewpawee";
     let links = vec![
         LinkInfo{
             name: "LinkedIn".to_string(),
@@ -30,10 +30,10 @@ pub fn App() -> impl IntoView {
     ];
 
     view! {
-        <div class="flex justify-center px-4 py-4">
+        <div class="flex justify-center px-4 py-48">
             <div class="max-w-2xl mx-0 my-auto w-full h-full text-center">
                 <Avatar/>
-                <h3>{username}</h3>
+                <h1 class="my-4 text-2xl font-bold">{username}</h1>
                 {links
                     .into_iter()
                     .map(|link| {
@@ -50,7 +50,7 @@ pub fn App() -> impl IntoView {
 pub fn Avatar() -> impl IntoView {
     view! {
         <div class="relative inline-flex items-center justify-center w-48 h-48 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-            <span class="font-medium text-gray-600 dark:text-gray-300">JL</span>
+            <span class="font-medium text-gray-600 dark:text-gray-300">MP</span>
         </div>
     }
 }

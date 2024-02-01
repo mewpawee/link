@@ -30,8 +30,8 @@ pub fn App() -> impl IntoView {
     ];
 
     view! {
-        <div class="flex justify-center px-4 py-48">
-            <div class="max-w-2xl mx-0 my-auto w-full h-full text-center">
+        <div class="flex justify-center h-screen">
+            <div class="max-w-2xl mx-0 my-auto w-full text-center">
                 <Avatar/>
                 <h1 class="my-4 text-2xl font-bold">{username}</h1>
                 {links

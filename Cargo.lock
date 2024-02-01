@@ -997,7 +997,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "link-me"
+name = "link"
 version = "0.1.0"
 dependencies = [
  "icondata",
